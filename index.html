@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K M Nurazzaman - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav class="container">
+            <div class="nav-content">
+                <button class="logo" onclick="scrollToSection('hero')">
+                    NK<span class="highlight">.</span>
+                </button>
+
+                <div class="nav-links">
+                    <button onclick="scrollToSection('about')">About</button>
+                    <button onclick="scrollToSection('skills')">Skills</button>
+                    <button onclick="scrollToSection('projects')">Projects</button>
+                    <button onclick="scrollToSection('experience')">Experience</button>
+                    <button onclick="scrollToSection('contact')">Contact</button>
+                </div>
+
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun-icon hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content animate-on-load">
+                    <p class="hero-greeting">Hi, my name is</p>
+                    <h1 class="hero-name">K M Nurazzaman</h1>
+                    <h2 class="hero-title">IT Support Specialist | Software UI & UX Developer</h2>
+                    <p class="hero-description">Building secure, intelligent, and reliable systems for better future :)</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-outline" onclick="scrollToSection('projects')">
+                            View Projects
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                        <button class="btn btn-primary" onclick="downloadCV()">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Download CV
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2>About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-content animate-on-scroll">
+                    <div class="about-text">
+                        <p class="mb-4">Hello! I'm Nurazzaman, a passionate IT professional with a Computer Science and Engineering background. I specialize in IT support, system administration, and am actively developing Interactive mordan UI designs.</p>
+                        <p class="mb-4">As a graduate from Bangladesh University, I've built a strong foundation in both theoretical concepts and practical implementations. My journey in technology has been driven by a curiosity to solve complex problems and create impactful solutions.</p>
+                        <p>Currently working at Midland Bank PLC, I manage critical IT infrastructure, ensuring seamless operations while continuously learning and adapting to emerging technologies. My goal is to bridge the gap between traditional IT support and cutting-edge technologies like AI and cybersecurity. Beyond my professional work, I'm committed to education and knowledge sharing. I've had the privilege of teaching Python programming to 90 students as part of a government initiative, making technology more accessible to aspiring learners.</p>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-wrapper">
+                            <img src="ProfilePhoto.png" alt="K M Nurazzaman" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="image-placeholder" style="display: none;">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Skills Section -->
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2>Skills & Expertise</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="skills-grid animate-on-scroll">
+                    <div class="skill-category category-secondary">
+                        <div class="skill-category-header">
+                            <div class="skill-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                            </div>
+                            <h3>Programming</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-category category-accent">
+                        <div class="skill-category-header">
+                            <div class="skill-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                    <line x1="12" y1="19" x2="12" y2="22"></line>
+                                </svg>
+                            </div>
+                            <h3>AI/Data</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Machine Learning Basics</span>
+                            <span class="skill-tag">Data Analysis</span>
+                        </div>
+                    </div>
+                    <div class="skill-category category-blue">
+                        <div class="skill-category-header">
+                            <div class="skill-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="16" y="16" width="6" height="6" rx="1"></rect>
+                                    <rect x="2" y="16" width="6" height="6" rx="1"></rect>
+                                    <rect x="9" y="2" width="6" height="6" rx="1"></rect>
+                                    <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path>
+                                    <path d="M12 12V8"></path>
+                                </svg>
+                            </div>
+                            <h3>Networking</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">LAN/WAN</span>
+                            <span class="skill-tag">CISCO</span>
+                            <span class="skill-tag">Routing & Switching</span>
+                        </div>
+                    </div>
+                    <div class="skill-category category-orange">
+                        <div class="skill-category-header">
+                            <div class="skill-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                                </svg>
+                            </div>
+                            <h3>Tools</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">Windows Server</span>
+                            <span class="skill-tag">Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2>Projects & Work</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-category">Research</div>
+                        <div class="project-content">
+                            <h3>Mobile Communication Optimization</h3>
+                            <p>Bachelor's thesis project focusing on optimizing mobile network performance through advanced algorithms and data analysis. Implemented solutions to enhance signal strength and reduce latency in cellular networks.</p>
+                            <div class="project-impact">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                </svg>
+                                <span>Improved network efficiency by analyzing real-world data patterns</span>
+                            </div>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Data Analysis</span>
+                                <span>Networking</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-category">IoT</div>
+                        <div class="project-content">
+                            <h3>IoT Soil Monitoring System</h3>
+                            <p>Developed an intelligent IoT-based system for real-time soil moisture and nutrient monitoring to help farmers optimize irrigation and improve crop yield through data-driven insights.</p>
+                            <div class="project-impact">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                </svg>
+                                <span>Automated agricultural monitoring for improved efficiency</span>
+                            </div>
+                            <div class="project-tags">
+                                <span>IoT</span>
+                                <span>Sensors</span>
+                                <span>Python</span>
+                                <span>Data Visualization</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-category">Education</div>
+                        <div class="project-content">
+                            <h3>Python Teaching Program</h3>
+                            <p>Led a comprehensive Python programming course for 90 students as part of a government initiative. Designed curriculum, created teaching materials, and mentored students from beginner to intermediate level.</p>
+                            <div class="project-impact">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                </svg>
+                                <span>Empowered 90 students with programming skills</span>
+                            </div>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Education</span>
+                                <span>Curriculum Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-category">Infrastructure</div>
+                        <div class="project-content">
+                            <h3>Network Setup & Troubleshooting</h3>
+                            <p>Designed and implemented enterprise-level network infrastructure including LAN/WAN configuration, firewall setup, and CISCO router management for secure and reliable connectivity.</p>
+                            <div class="project-impact">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                </svg>
+                                <span>Ensured 99.9% uptime for critical business operations</span>
+                            </div>
+                            <div class="project-tags">
+                                <span>FortiGate</span>
+                                <span>CCNA</span>
+                                <span>Network Security</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section section-alt">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2>Experience</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Current</div>
+                            <div class="timeline-header">
+                                <svg class="timeline-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                </svg>
+                                <div>
+                                    <h3>IT Support Specialist</h3>
+                                    <h4>Midland Bank PLC</h4>
+                                    <span class="job-type">Full-time</span>
+                                </div>
+                            </div>
+                            <ul class="achievement-list">
+                                <li>Manage and maintain critical IT infrastructure ensuring 99.9% uptime</li>
+                                <li>Configure and troubleshoot firewalls and CISCO routers for secure network operations</li>
+                                <li>Provide technical support for 2500+ users across multiple branches</li>
+                                <li>Implement IT solutions to streamline banking operations and enhance security</li>
+                                <li>Maintain and optimize database systems using SQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Past</div>
+                            <div class="timeline-header">
+                                <svg class="timeline-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                </svg>
+                                <div>
+                                    <h3>Python Programming Instructor</h3>
+                                    <h4>Government Initiative Project</h4>
+                                    <span class="job-type">Contract</span>
+                                </div>
+                            </div>
+                            <ul class="achievement-list">
+                                <li>Trained 90 students in Python programming from beginner to intermediate level</li>
+                                <li>Designed comprehensive curriculum covering fundamentals to advanced topics</li>
+                                <li>Created hands-on projects and exercises for practical learning</li>
+                                <li>Mentored students on coding best practices and problem-solving techniques</li>
+                                <li>Achieved 95% student satisfaction rate with positive learning outcomes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+<section id="certifications" class="section">
+    <div class="container">
+        <div class="section-header animate-on-scroll">
+            <h2>Certifications & Achievements</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="certifications-grid">
+
+            <!-- Nutanix -->
+            <div class="cert-card animate-on-scroll">
+                <div class="cert-icon">
+                    <!-- Award Icon -->
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="8" r="7"></circle>
+                        <polyline points="8 21 12 17 16 21"></polyline>
+                    </svg>
+                </div>
+                <h3>Nutanix Certified Associate (NCA)</h3>
+                <p>
+                    Pursuing professional certification in Enterprise Hybrid Multicloud,
+                    covering virtualization, protocols, and enterprise solutions.
+                </p>
+                <span class="cert-year">Completed</span>
+            </div>
+
+            <!-- NASA Space Apps -->
+            <div class="cert-card animate-on-scroll">
+                <div class="cert-icon">
+                    <!-- Rocket Icon -->
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4.5 16.5c-1.5 1.5-1.5 3 0 4.5s3 1.5 4.5 0l1.5-1.5-4.5-4.5-1.5 1.5z"></path>
+                        <path d="M14 10l-4 4"></path>
+                        <path d="M14 10c2-2 4-6 4-6s-4 2-6 4"></path>
+                    </svg>
+                </div>
+                <h3>NASA Space Apps Challenge</h3>
+                <p>
+                    Participated in the BASIS global NASA Space Apps Challenge,
+                    collaborating on innovative solutions for space-related problems.
+                </p>
+                <span class="cert-year">participate</span>
+            </div>
+
+            <!-- CCNA -->
+            <div class="cert-card animate-on-scroll">
+                <div class="cert-icon">
+                    <!-- Award Icon -->
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="8" r="7"></circle>
+                        <polyline points="8 21 12 17 16 21"></polyline>
+                    </svg>
+                </div>
+                <h3>Cisco Certified Network Associate (CCNA)</h3>
+                <p>
+                    Pursuing CCNA certification with knowledge in networking,
+                    IP services, security, and automation.
+                </p>
+                <span class="cert-year">Completed</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section section-alt">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2>Design Portfolio</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop" alt="Mobile App Design">
+                        <div class="portfolio-overlay">
+                            <h3>Mobile App UI</h3>
+                            <p>iOS & Android</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1545235617-7a424c1a60cc?w=600&h=400&fit=crop" alt="Dashboard Design">
+                        <div class="portfolio-overlay">
+                            <h3>Analytics Dashboard</h3>
+                            <p>Web Application</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1586717799252-bd134ad00e26?w=600&h=400&fit=crop" alt="Website Design">
+                        <div class="portfolio-overlay">
+                            <h3>Corporate Website</h3>
+                            <p>Responsive Design</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=600&h=400&fit=crop" alt="Branding Design">
+                        <div class="portfolio-overlay">
+                            <h3>Brand Identity</h3>
+                            <p>Logo & Guidelines</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="contact-content animate-on-scroll">
+                    <h2>Get In Touch</h2>
+                    <p class="contact-description">I'm currently exploring opportunities in AI and Human computer Interaction. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                    
+                    <div class="contact-grid">
+                        <a href="mailto:kmnurazzaman@gmail.com" class="contact-card">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <h3>Email</h3>
+                            <p>kmnurazzaman@gmail.com</p>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kmnurazzaman" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <div class="contact-icon accent">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </div>
+                            <h3>LinkedIn</h3>
+                            <p>linkedin/kmnurazzaman</p>
+                        </a>
+                        <a href="https://github.com/nurazzaman" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </div>
+                            <h3>GitHub</h3>
+                            <p>github.com/nurazzaman</p>
+                        </a>
+                    </div>
+
+                    
+                    <a href="https://wa.me/491636806240" target="_blank" class="whatsapp-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-1.9 5.4L22 22l-5.1-2.7A8.5 8.5 0 1 1 21 11.5z"></path>
+                        </svg>
+                        WhatsApp Me
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Designed & Built by K M Nurazzaman</p>
+            <div class="footer-links">
+                <a href="https://github.com/nurazzaman" target="_blank" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/kmnurazzaman" target="_blank" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+                <a href="mailto:kmnurazzaman@gmail.com">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
